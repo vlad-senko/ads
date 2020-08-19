@@ -1,0 +1,43 @@
+<div class="filters">
+  <div class="form-control">
+    <label for="type">Type:</label>
+    <select
+      name="type"
+      id="type"
+      [value]="currentTypeFilter"
+      (change)="typeFilterChanged($event)"
+    >
+      <option [value]="option.value" *ngFor="let option of typeFilterOptions">{{
+        option.name
+      }}</option>
+    </select>
+  </div>
+  <div class="form-control">
+    <label for="second-level">Second level:</label>
+    <select
+      name="second-level"
+      id="second-level"
+      [(ngModel)]="currentSecondLevelFilter"
+      (change)="secondLevelFilterChanged($event)"
+    >
+      <option
+        [value]="option.value"
+        *ngFor="let option of secondLevelFilterOptions"
+        >{{ option.name }}</option
+      >
+    </select>
+  </div>
+  <div class="form-control" style="margin-left: auto;">
+    <label for="date-range">Date range:</label>
+    <select
+      name="date-range"
+      id="date-range"
+      [value]="currentDateRangeFilter"
+      (change)="dateRangeFilterChanged($event)"
+    >
+      <option [value]="option.value" *ngFor="let option of dateRangeFilterOptions">{{
+        option.name
+      }}</option>
+    </select>
+  </div>
+</div>

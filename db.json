@@ -1,0 +1,117 @@
+{
+  "campaigns-by-site": [
+    {
+      "id": 1,
+      "name": "Facebook",
+      "leads": 123,
+      "revenue": 1000
+    },
+    {
+      "id": 2,
+      "name": "Instagram",
+      "leads": 33,
+      "revenue": 57239
+    },
+    {
+      "id": 3,
+      "name": "Twitter",
+      "leads": 777,
+      "revenue": 420,
+      "rpl": 502
+    }
+  ],
+  "campaigns-by-state": [
+    {
+      "id": 1,
+      "name": "Nevada",
+      "leads": 3920,
+      "revenue": 2839
+    },
+    {
+      "id": 2,
+      "name": "Florida",
+      "leads": 3940,
+      "revenue": 392
+    },
+    {
+      "id": 3,
+      "name": "California",
+      "leads": 20449,
+      "revenue": 384
+    }
+  ],
+  "adGroups-by-form-name": [
+    {
+      "id": 1,
+      "campaignId": 1,
+      "name": "Login Form",
+      "leads": 22,
+      "revenue": 44
+    },
+    {
+      "id": 1,
+      "campaignId": 1,
+      "name": "User Form",
+      "leads": 33,
+      "revenue": 46
+    },
+    {
+      "id": 2,
+      "campaignId": 2,
+      "name": "Product Form",
+      "leads": 492,
+      "revenue": 319
+    },
+    {
+      "id": 3,
+      "campaignId": 2,
+      "name": "Login Form",
+      "leads": 22,
+      "revenue": 44
+    },
+    {
+      "id": 3,
+      "campaignId": 3,
+      "name": "Product Form",
+      "leads": 22,
+      "revenue": 44
+    }
+  ],
+  "adGroups-by-referral": [
+    {
+      "id": 1,
+      "campaignId": 1,
+      "name": "User 1",
+      "leads": 22,
+      "revenue": 44
+    },
+    {
+      "id": 2,
+      "campaignId": 1,
+      "name": "User 2",
+      "leads": 33,
+      "revenue": 46
+    },
+    {
+      "id": 3,
+      "campaignId": 1,
+      "name": "User 3",
+      "leads": 492,
+      "revenue": 319
+    },
+    {
+      "id": 3,
+      "campaignId": 3,
+      "name": "User 1",
+      "leads": 22,
+      "revenue": 44
+    },
+    {
+      "id": 3,
+      "campaignId": 2,
+      "name": "User 2",
+      "leads": 22,
+      "revenue": 44
+    }
+  ]
+}

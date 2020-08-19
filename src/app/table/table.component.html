@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+      <td *ngFor="let col of columns">{{ col.caption }}</td>
+    </tr>
+  </thead>
+
+  <ng-container *ngFor="let item of campaigns">
+    <tbody style="background: greenyellow;">
+      <tr (click)="item.isExpanded = !item.isExpanded">
+        <td *ngFor="let col of columns">{{ item[col.name] }}</td>
+      </tr>
+    </tbody>
+    <tbody *ngIf="item.isExpanded && item.adGroups.length">
+      <tr
+        *ngFor="let nestedRow of item.adGroups"
+        app-table-row
+        [columns]="columns"
+        [data]="nestedRow"
+      ></tr>
+    </tbody>
+  </ng-container>
+</table>

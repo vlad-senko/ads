@@ -1,0 +1,18 @@
+.filters {
+    display: flex;
+    padding: 15px;
+    background: #ccc;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    label {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}
